@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section id="jsNumberBaseConverter">
+        <h1><b><i>BASE CONVERTER</i></b></h1>
+        <label for="inputNumber"><i>User Input</i></label> <br>
+
+
+        <!-- user input -->
+
+        <input type="text" id="inputNumber" placeholder="Your Number"> <br><br>
+        <label for="fromTo"><i>Conversion Type</i></label> <br>
+
+               <!-- conversion options -->
+
+
+
+        <select name="fromTo" id="fromTo">
+            <option value="">Select Option</option>
+            <option value="decimal to binary">Decimal To Binary</option>
+            <option value="binary to decimal">Binary To Decimal</option>
+            <option value="decimal to hexadecimal">Decimal To Hexadecimal</option>
+            <option value="hexadecimal to decimal">Hexadecimal To Decimal</option>
+            <option value="binary to hexadecimal">Binary To Hexadecimal</option>
+            <option value="hexadecimal to binary">Hexadecimal To Binary</option>
+        </select>
+        <br> <br> <br>
+
+        <button id="convertBtn"><i>Convert</i></button>
+        <button id="resetBtn"><i>Reset</i></button>
+        <br> <br>
+        <p id="answerP"><i>Output</i> : <span id="showAnswer"></span></p>
+    </section>
+    
+    <script src="logic.js"></script>
+</body>
+
+</html>
